@@ -10,6 +10,9 @@ detection, and automated reporting.
 
 ```
 market_regime/
+│
+├── main.py               — End-to-end pipeline orchestrator
+│
 ├── src/
 │   ├── config.py         — All configuration constants and paths
 │   ├── data.py           — Data download and feature engineering
@@ -18,8 +21,8 @@ market_regime/
 │   ├── changepoints.py   — Changepoint detection and filtering
 │   ├── evaluation.py     — Out-of-sample evaluation framework
 │   ├── visualization.py  — 7 output charts
-│   ├── report.py         — Final analysis report generator
-│   └── main.py           — End-to-end pipeline orchestrator
+│   └── report.py         — Final analysis report generator
+│   
 ├── outputs/
 │   ├── figures/          — 7 PNG charts
 │   ├── reports/          — CSV + TXT analysis reports
@@ -80,11 +83,12 @@ ground-truth label to compare against. Instead, evaluation uses:
 
 ## Key Configuration (src/config.py)
 
-| Parameter | Default | Description |
-|---|---|---|
-| `N_COMPONENTS` | 4 | Number of HMM hidden states |
-| `TRAIN_END_DATE` | 2020-12-31 | Temporal split boundary |
-| `ROLLING_VOL_WINDOW` | 20 | Days for volatility/momentum/autocorr |
-| `MIN_REGIME_DURATION` | 10 | Minimum days for a valid regime run |
-| `CONFIDENCE_THRESHOLD` | 0.70 | Min posterior confidence for major changepoint |
-| `RANDOM_SEED` | 42 | Reproducibility seed |
+| Parameter              | Default    | Description                                    |
+| ---------------------- | ---------- | ---------------------------------------------- |
+| `N_COMPONENTS`         | 4          | Number of HMM hidden states                    |
+| `TICKER`               | `SPY`      | Ticker symbol for the data                     |
+| `TRAIN_END_DATE`       | 2020-12-31 | Temporal split boundary                        |
+| `ROLLING_VOL_WINDOW`   | 20         | Days for volatility/momentum/autocorr          |
+| `MIN_REGIME_DURATION`  | 10         | Minimum days for a valid regime run            |
+| `CONFIDENCE_THRESHOLD` | 0.70       | Min posterior confidence for major changepoint |
+| `RANDOM_SEED`          | 42         | Reproducibility seed                           |

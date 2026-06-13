@@ -15,7 +15,7 @@ for _d in (FIGURES_DIR, REPORTS_DIR, DATA_DIR):
     _d.mkdir(parents=True, exist_ok=True)
 
 # ── Data ─────────────────────────────────────────────────────────────────────
-TICKER         = "TCS.NS"
+TICKER         = "INFY.NS"
 START_DATE     = "2010-01-01"
 TRAIN_END_DATE = "2020-12-31"
 

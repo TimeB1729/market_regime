@@ -6,32 +6,32 @@
 Q1: WHAT REGIMES WERE DISCOVERED?
 
   ► High Volatility / Crisis
-    Mean daily return  : +0.00363
-    Daily volatility   :  0.02418
-    Ann. Sharpe        :  2.385
-    Max Drawdown       :  -11.56%
-    Frequency (train)  :  10.25%
+    Mean daily return  : +0.00228
+    Daily volatility   :  0.01935
+    Ann. Sharpe        :  1.867
+    Max Drawdown       :  -11.63%
+    Frequency (train)  :  14.75%
 
   ► Ranging / Sideways
-    Mean daily return  : +0.00030
-    Daily volatility   :  0.01073
-    Ann. Sharpe        :  0.446
-    Max Drawdown       :  -26.32%
-    Frequency (train)  :  34.77%
+    Mean daily return  : +0.00058
+    Daily volatility   :  0.01237
+    Ann. Sharpe        :  0.743
+    Max Drawdown       :  -29.13%
+    Frequency (train)  :  45.21%
 
   ► Trending Bear
-    Mean daily return  : -0.00148
-    Daily volatility   :  0.02367
-    Ann. Sharpe        :  -0.992
-    Max Drawdown       :  -69.97%
-    Frequency (train)  :  18.54%
+    Mean daily return  : -0.00397
+    Daily volatility   :  0.04870
+    Ann. Sharpe        :  -1.294
+    Max Drawdown       :  -70.04%
+    Frequency (train)  :  6.28%
 
   ► Trending Bull
-    Mean daily return  : +0.00176
-    Daily volatility   :  0.01296
-    Ann. Sharpe        :  2.154
-    Max Drawdown       :  -11.25%
-    Frequency (train)  :  36.44%
+    Mean daily return  : +0.00081
+    Daily volatility   :  0.01199
+    Ann. Sharpe        :  1.072
+    Max Drawdown       :  -15.33%
+    Frequency (train)  :  33.77%
 
 
 ──────────────────────────────────────────────────────────────────────
@@ -40,96 +40,91 @@ Q2: HOW PERSISTENT ARE THEY?
 Train persistence:
                           Mean Dur  Median Dur  Max Dur  N Episodes
 Regime                                                             
-High Volatility / Crisis      21.2        19.0       51          13
-Ranging / Sideways             7.4         6.0       26         126
-Trending Bear                  4.1         2.0       26         121
-Trending Bull                 20.4        15.5       93          48
+High Volatility / Crisis      17.3        19.0       37          23
+Ranging / Sideways            25.9        22.0      108          47
+Trending Bear                  1.8         1.0        6          97
+Trending Bull                 10.3         8.0       32          88
 
 Test persistence:
                           Mean Dur  Median Dur  Max Dur  N Episodes
 Regime                                                             
-High Volatility / Crisis      17.0        17.0       17           1
-Ranging / Sideways             9.2         8.0       28          61
-Trending Bear                  3.2         2.0       26          60
-Trending Bull                 27.5        25.0       76          21
+High Volatility / Crisis      14.4        16.5       19          14
+Ranging / Sideways            25.1        16.0      106          24
+Trending Bear                  1.8         1.0        8          60
+Trending Bull                  7.8         6.5       22          56
 
 ──────────────────────────────────────────────────────────────────────
 Q3: WHICH TRANSITIONS OCCUR MOST FREQUENTLY?
 
 Top transitions (train):
-  Trending Bear → Ranging / Sideways  (0.216)
-  Ranging / Sideways → Trending Bear  (0.090)
-  Ranging / Sideways → Trending Bull  (0.045)
-  Trending Bull → Trending Bear  (0.034)
-  High Volatility / Crisis → Ranging / Sideways  (0.025)
+  Trending Bear → Trending Bull  (0.435)
+  Trending Bear → High Volatility / Crisis  (0.135)
+  Trending Bull → Trending Bear  (0.052)
+  Trending Bull → Ranging / Sideways  (0.045)
+  Ranging / Sideways → Trending Bear  (0.035)
 
 Top transitions (test):
-  Trending Bear → Ranging / Sideways  (0.298)
-  Ranging / Sideways → Trending Bear  (0.073)
-  High Volatility / Crisis → Ranging / Sideways  (0.059)
-  Ranging / Sideways → Trending Bull  (0.036)
-  Trending Bull → Trending Bear  (0.031)
+  Trending Bear → Trending Bull  (0.426)
+  Trending Bear → High Volatility / Crisis  (0.130)
+  Trending Bull → Trending Bear  (0.081)
+  Trending Bull → Ranging / Sideways  (0.048)
+  High Volatility / Crisis → Trending Bull  (0.040)
 
 ──────────────────────────────────────────────────────────────────────
 Q4: DO MAJOR CHANGEPOINTS ALIGN WITH KNOWN MARKET EVENTS?
 
-  –  2010-02-23  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
-  –  2010-07-16  [Trending Bull → High Volatility / Crisis]  (no direct match in known-event list)
-  –  2010-08-12  [High Volatility / Crisis → Trending Bull]  (no direct match in known-event list)
-  ✓  2011-08-05  [Trending Bull → Trending Bear]  aligns with: US Debt Ceiling / Euro Crisis
-  ✓  2011-08-29  [Trending Bear → High Volatility / Crisis]  aligns with: US Debt Ceiling / Euro Crisis
-  –  2012-05-23  [High Volatility / Crisis → Ranging / Sideways]  (no direct match in known-event list)
-  –  2012-06-15  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
-  –  2012-08-09  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
-  –  2012-10-17  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
-  –  2013-01-04  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
-  –  2013-01-21  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
-  –  2013-05-07  [Trending Bear → Ranging / Sideways]  (no direct match in known-event list)
-  –  2013-05-23  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
-  –  2013-11-06  [High Volatility / Crisis → Ranging / Sideways]  (no direct match in known-event list)
-  –  2014-01-17  [Trending Bull → Trending Bear]  (no direct match in known-event list)
-  –  2014-06-16  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
-  –  2014-10-17  [Trending Bull → Trending Bear]  (no direct match in known-event list)
-  –  2015-04-15  [Ranging / Sideways → Trending Bear]  (no direct match in known-event list)
-  ✓  2015-08-06  [Ranging / Sideways → Trending Bull]  aligns with: China/Oil Selloff 2015-16
-  ✓  2015-09-03  [Trending Bull → Ranging / Sideways]  aligns with: China/Oil Selloff 2015-16
-  –  2016-05-18  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
-  –  2016-06-24  [Trending Bull → Trending Bear]  (no direct match in known-event list)
-  –  2016-08-17  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
-  –  2016-10-07  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
-  –  2017-05-15  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
-  –  2017-08-18  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
-  –  2017-10-23  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
-  –  2017-11-13  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
-  –  2018-01-22  [Trending Bull → High Volatility / Crisis]  (no direct match in known-event list)
-  –  2018-05-18  [High Volatility / Crisis → Trending Bull]  (no direct match in known-event list)
-  ✓  2018-10-03  [Trending Bull → Trending Bear]  aligns with: Q4 2018 Selloff
-  –  2019-01-31  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
-  –  2019-02-18  [Trending Bull → Trending Bear]  (no direct match in known-event list)
-  –  2019-08-02  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
-  –  2019-09-05  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
-  –  2020-01-07  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
-  ✓  2020-03-20  [Trending Bear → High Volatility / Crisis]  aligns with: COVID-19 Crash
-  –  2020-08-24  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
-  –  2021-01-08  [Trending Bull → High Volatility / Crisis]  (no direct match in known-event list)
-  –  2021-02-01  [High Volatility / Crisis → Ranging / Sideways]  (no direct match in known-event list)
-  ✓  2022-03-24  [Ranging / Sideways → Trending Bull]  aligns with: Rate Hike Bear Market 2022
-  –  2023-04-13  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
-  –  2023-08-10  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
-  –  2024-02-02  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
-  –  2024-04-29  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
-  –  2024-06-28  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
-  –  2025-04-03  [Ranging / Sideways → Trending Bear]  (no direct match in known-event list)
-  –  2025-08-08  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
-  –  2026-02-04  [Trending Bull → Trending Bear]  (no direct match in known-event list)
+  –  2010-02-26  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  ✓  2010-05-11  [Trending Bull → Ranging / Sideways]  aligns with: Flash Crash (May 2010)
+  –  2010-08-10  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2011-02-11  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2011-05-16  [High Volatility / Crisis → Ranging / Sideways]  (no direct match in known-event list)
+  –  2012-02-10  [High Volatility / Crisis → Ranging / Sideways]  (no direct match in known-event list)
+  –  2012-05-14  [High Volatility / Crisis → Trending Bull]  (no direct match in known-event list)
+  –  2012-11-15  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2013-02-08  [High Volatility / Crisis → Ranging / Sideways]  (no direct match in known-event list)
+  –  2013-03-12  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
+  –  2013-05-15  [High Volatility / Crisis → Ranging / Sideways]  (no direct match in known-event list)
+  –  2014-02-10  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2014-04-15  [High Volatility / Crisis → Ranging / Sideways]  (no direct match in known-event list)
+  –  2014-06-26  [High Volatility / Crisis → Trending Bull]  (no direct match in known-event list)
+  –  2014-08-22  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2015-02-27  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2015-05-25  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  ✓  2015-12-21  [Trending Bull → Ranging / Sideways]  aligns with: China/Oil Selloff 2015-16
+  –  2016-03-31  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2016-05-17  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2016-09-16  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2016-12-23  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2017-05-09  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2018-02-21  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2018-05-21  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2018-08-02  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2019-02-12  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2019-03-27  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
+  –  2019-05-09  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2019-08-13  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  ✓  2020-02-10  [Trending Bull → Ranging / Sideways]  aligns with: COVID-19 Crash
+  –  2020-08-13  [High Volatility / Crisis → Ranging / Sideways]  (no direct match in known-event list)
+  –  2020-12-17  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2021-02-09  [High Volatility / Crisis → Trending Bull]  (no direct match in known-event list)
+  –  2021-05-14  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2021-11-22  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2023-05-16  [High Volatility / Crisis → Ranging / Sideways]  (no direct match in known-event list)
+  –  2023-08-21  [High Volatility / Crisis → Ranging / Sideways]  (no direct match in known-event list)
+  –  2024-02-13  [High Volatility / Crisis → Ranging / Sideways]  (no direct match in known-event list)
+  –  2024-05-10  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2024-08-30  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2024-12-20  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2025-02-13  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2025-10-08  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
 
 ──────────────────────────────────────────────────────────────────────
 Q5: DOES THE HMM IDENTIFY MEANINGFUL MARKET STRUCTURE?
 
-  Train log-likelihood (per sample): -6.12811
-  Test  log-likelihood (per sample): -5.99207
-  LL ratio (test/train)            : 0.9778
-  Total variation distance (dist.) : 0.1329
+  Train log-likelihood (per sample): -5.55140
+  Test  log-likelihood (per sample): -5.84889
+  LL ratio (test/train)            : 1.0536
+  Total variation distance (dist.) : 0.0196
 
   Interpretation:
   • A Sharpe ratio > 1.0 in Trending Bull and near 0 / negative in
