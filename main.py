@@ -23,27 +23,27 @@ sys.path.insert(0, os.path.dirname(__file__))
 import numpy as np
 import pandas as pd
 
-from config import (
+from src.config import (
     TICKER, START_DATE, TRAIN_END_DATE,
     MIN_REGIME_DURATION, RANDOM_SEED, DATA_DIR,
 )
-from data import download_data, build_features, temporal_split
-from model import (
+from src.data import download_data, build_features, temporal_split
+from src.model import (
     train_hmm, assign_regime_labels, infer_states,
     compute_log_likelihood, save_model,
 )
-from profiling import profile_regimes, print_regime_report, save_regime_report
-from changepoints import (
+from src.profiling import profile_regimes, print_regime_report, save_regime_report
+from src.changepoints import (
     detect_changepoints, filter_major_changepoints,
     print_changepoints, save_changepoints,
 )
-from evaluation import (
+from src.evaluation import (
     evaluate_likelihood, evaluate_distribution_stability,
     evaluate_transition_consistency, evaluate_persistence,
     save_evaluation,
 )
-from visualization import render_all
-from report import build_report, save_report
+from src.visualization import render_all
+from src.report import build_report, save_report
 
 # ── Transition matrix helper ──────────────────────────────────────────────────
 
