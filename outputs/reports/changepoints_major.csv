@@ -1,0 +1,50 @@
+Date,From Regime,To Regime,From Duration,To Duration,Confidence,Is Major
+2010-02-23,Ranging / Sideways,Trending Bull,10,13,0.8428012057969951,True
+2010-07-16,Trending Bull,High Volatility / Crisis,22,19,0.8736086073229044,True
+2010-08-12,High Volatility / Crisis,Trending Bull,19,45,0.5849922430053502,True
+2011-08-05,Trending Bull,Trending Bear,10,15,0.9552183611135913,True
+2011-08-29,Trending Bear,High Volatility / Crisis,15,51,0.999905205684988,True
+2012-05-23,High Volatility / Crisis,Ranging / Sideways,20,17,0.965641890481812,True
+2012-06-15,Ranging / Sideways,Trending Bull,17,19,0.539769132788306,True
+2012-08-09,Ranging / Sideways,Trending Bull,16,25,0.8637171246143175,True
+2012-10-17,Ranging / Sideways,Trending Bull,11,33,0.667864854699295,True
+2013-01-04,Ranging / Sideways,Trending Bull,10,11,0.9271307715398417,True
+2013-01-21,Trending Bull,Ranging / Sideways,11,14,0.6664358027390852,True
+2013-05-07,Trending Bear,Ranging / Sideways,14,12,0.9294033287909389,True
+2013-05-23,Ranging / Sideways,Trending Bull,12,14,0.610412846562781,True
+2013-11-06,High Volatility / Crisis,Ranging / Sideways,15,23,0.6273517510911476,True
+2014-01-17,Trending Bull,Trending Bear,25,20,0.9999812890605168,True
+2014-06-16,Ranging / Sideways,Trending Bull,16,33,0.8625611130093019,True
+2014-10-17,Trending Bull,Trending Bear,29,20,0.9999995329673037,True
+2015-04-15,Ranging / Sideways,Trending Bear,10,16,0.9890553450253523,True
+2015-08-06,Ranging / Sideways,Trending Bull,18,20,0.9491286467436948,True
+2015-09-03,Trending Bull,Ranging / Sideways,20,12,0.8414557376657148,True
+2016-05-18,Ranging / Sideways,Trending Bull,13,27,0.8446499254019685,True
+2016-06-24,Trending Bull,Trending Bear,27,15,0.9554722496504111,True
+2016-08-17,Trending Bull,Ranging / Sideways,13,10,0.5059606300124538,True
+2016-10-07,Ranging / Sideways,Trending Bull,13,15,0.6017618724203508,True
+2017-05-15,Ranging / Sideways,Trending Bull,10,16,0.9838107709508436,True
+2017-08-18,Ranging / Sideways,Trending Bull,14,43,0.7838259374292714,True
+2017-10-23,Trending Bull,Ranging / Sideways,43,15,0.8035376836462218,True
+2017-11-13,Ranging / Sideways,Trending Bull,15,49,0.9585492616188076,True
+2018-01-22,Trending Bull,High Volatility / Crisis,49,16,0.9949538081637721,True
+2018-05-18,High Volatility / Crisis,Trending Bull,22,93,0.967232271071795,True
+2018-10-03,Trending Bull,Trending Bear,93,26,0.9818122422171772,True
+2019-01-31,Ranging / Sideways,Trending Bull,11,11,0.8551418029017436,True
+2019-02-18,Trending Bull,Trending Bear,11,10,0.9853054385754195,True
+2019-08-02,Ranging / Sideways,Trending Bull,16,21,0.7093070187742176,True
+2019-09-05,Trending Bull,Ranging / Sideways,21,10,0.7343231424886166,True
+2020-01-07,Ranging / Sideways,Trending Bull,10,20,0.6555733731815523,True
+2020-03-20,Trending Bear,High Volatility / Crisis,14,44,0.9999999994033715,True
+2020-08-24,Ranging / Sideways,Trending Bull,16,22,0.9806811452292071,True
+2021-01-08,Trending Bull,High Volatility / Crisis,41,15,0.42445751978200974,True
+2021-02-01,High Volatility / Crisis,Ranging / Sideways,15,12,0.8332808509065424,True
+2022-03-24,Ranging / Sideways,Trending Bull,16,15,0.8040097065691874,True
+2023-04-13,Ranging / Sideways,Trending Bull,15,68,0.9966563932457593,True
+2023-08-10,Ranging / Sideways,Trending Bull,13,42,0.8538607757779658,True
+2024-02-02,Ranging / Sideways,Trending Bull,12,31,0.9816120437411471,True
+2024-04-29,Ranging / Sideways,Trending Bull,21,22,0.8142462126195847,True
+2024-06-28,Ranging / Sideways,Trending Bull,18,25,0.8465980471430657,True
+2025-04-03,Ranging / Sideways,Trending Bear,20,12,0.9999977304676865,True
+2025-08-08,Ranging / Sideways,Trending Bull,18,29,0.6092615016956923,True
+2026-02-04,Trending Bull,Trending Bear,71,26,0.9999999999236024,True

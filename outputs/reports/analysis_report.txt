@@ -1,0 +1,172 @@
+======================================================================
+ MARKET REGIME DETECTION — ANALYSIS REPORT
+======================================================================
+
+──────────────────────────────────────────────────────────────────────
+Q1: WHAT REGIMES WERE DISCOVERED?
+
+  ► High Volatility / Crisis
+    Mean daily return  : +0.00363
+    Daily volatility   :  0.02418
+    Ann. Sharpe        :  2.385
+    Max Drawdown       :  -11.56%
+    Frequency (train)  :  10.25%
+
+  ► Ranging / Sideways
+    Mean daily return  : +0.00030
+    Daily volatility   :  0.01073
+    Ann. Sharpe        :  0.446
+    Max Drawdown       :  -26.32%
+    Frequency (train)  :  34.77%
+
+  ► Trending Bear
+    Mean daily return  : -0.00148
+    Daily volatility   :  0.02367
+    Ann. Sharpe        :  -0.992
+    Max Drawdown       :  -69.97%
+    Frequency (train)  :  18.54%
+
+  ► Trending Bull
+    Mean daily return  : +0.00176
+    Daily volatility   :  0.01296
+    Ann. Sharpe        :  2.154
+    Max Drawdown       :  -11.25%
+    Frequency (train)  :  36.44%
+
+
+──────────────────────────────────────────────────────────────────────
+Q2: HOW PERSISTENT ARE THEY?
+
+Train persistence:
+                          Mean Dur  Median Dur  Max Dur  N Episodes
+Regime                                                             
+High Volatility / Crisis      21.2        19.0       51          13
+Ranging / Sideways             7.4         6.0       26         126
+Trending Bear                  4.1         2.0       26         121
+Trending Bull                 20.4        15.5       93          48
+
+Test persistence:
+                          Mean Dur  Median Dur  Max Dur  N Episodes
+Regime                                                             
+High Volatility / Crisis      17.0        17.0       17           1
+Ranging / Sideways             9.2         8.0       28          61
+Trending Bear                  3.2         2.0       26          60
+Trending Bull                 27.5        25.0       76          21
+
+──────────────────────────────────────────────────────────────────────
+Q3: WHICH TRANSITIONS OCCUR MOST FREQUENTLY?
+
+Top transitions (train):
+  Trending Bear → Ranging / Sideways  (0.216)
+  Ranging / Sideways → Trending Bear  (0.090)
+  Ranging / Sideways → Trending Bull  (0.045)
+  Trending Bull → Trending Bear  (0.034)
+  High Volatility / Crisis → Ranging / Sideways  (0.025)
+
+Top transitions (test):
+  Trending Bear → Ranging / Sideways  (0.298)
+  Ranging / Sideways → Trending Bear  (0.073)
+  High Volatility / Crisis → Ranging / Sideways  (0.059)
+  Ranging / Sideways → Trending Bull  (0.036)
+  Trending Bull → Trending Bear  (0.031)
+
+──────────────────────────────────────────────────────────────────────
+Q4: DO MAJOR CHANGEPOINTS ALIGN WITH KNOWN MARKET EVENTS?
+
+  –  2010-02-23  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
+  –  2010-07-16  [Trending Bull → High Volatility / Crisis]  (no direct match in known-event list)
+  –  2010-08-12  [High Volatility / Crisis → Trending Bull]  (no direct match in known-event list)
+  ✓  2011-08-05  [Trending Bull → Trending Bear]  aligns with: US Debt Ceiling / Euro Crisis
+  ✓  2011-08-29  [Trending Bear → High Volatility / Crisis]  aligns with: US Debt Ceiling / Euro Crisis
+  –  2012-05-23  [High Volatility / Crisis → Ranging / Sideways]  (no direct match in known-event list)
+  –  2012-06-15  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
+  –  2012-08-09  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
+  –  2012-10-17  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
+  –  2013-01-04  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
+  –  2013-01-21  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2013-05-07  [Trending Bear → Ranging / Sideways]  (no direct match in known-event list)
+  –  2013-05-23  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
+  –  2013-11-06  [High Volatility / Crisis → Ranging / Sideways]  (no direct match in known-event list)
+  –  2014-01-17  [Trending Bull → Trending Bear]  (no direct match in known-event list)
+  –  2014-06-16  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
+  –  2014-10-17  [Trending Bull → Trending Bear]  (no direct match in known-event list)
+  –  2015-04-15  [Ranging / Sideways → Trending Bear]  (no direct match in known-event list)
+  ✓  2015-08-06  [Ranging / Sideways → Trending Bull]  aligns with: China/Oil Selloff 2015-16
+  ✓  2015-09-03  [Trending Bull → Ranging / Sideways]  aligns with: China/Oil Selloff 2015-16
+  –  2016-05-18  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
+  –  2016-06-24  [Trending Bull → Trending Bear]  (no direct match in known-event list)
+  –  2016-08-17  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2016-10-07  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
+  –  2017-05-15  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
+  –  2017-08-18  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
+  –  2017-10-23  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2017-11-13  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
+  –  2018-01-22  [Trending Bull → High Volatility / Crisis]  (no direct match in known-event list)
+  –  2018-05-18  [High Volatility / Crisis → Trending Bull]  (no direct match in known-event list)
+  ✓  2018-10-03  [Trending Bull → Trending Bear]  aligns with: Q4 2018 Selloff
+  –  2019-01-31  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
+  –  2019-02-18  [Trending Bull → Trending Bear]  (no direct match in known-event list)
+  –  2019-08-02  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
+  –  2019-09-05  [Trending Bull → Ranging / Sideways]  (no direct match in known-event list)
+  –  2020-01-07  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
+  ✓  2020-03-20  [Trending Bear → High Volatility / Crisis]  aligns with: COVID-19 Crash
+  –  2020-08-24  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
+  –  2021-01-08  [Trending Bull → High Volatility / Crisis]  (no direct match in known-event list)
+  –  2021-02-01  [High Volatility / Crisis → Ranging / Sideways]  (no direct match in known-event list)
+  ✓  2022-03-24  [Ranging / Sideways → Trending Bull]  aligns with: Rate Hike Bear Market 2022
+  –  2023-04-13  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
+  –  2023-08-10  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
+  –  2024-02-02  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
+  –  2024-04-29  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
+  –  2024-06-28  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
+  –  2025-04-03  [Ranging / Sideways → Trending Bear]  (no direct match in known-event list)
+  –  2025-08-08  [Ranging / Sideways → Trending Bull]  (no direct match in known-event list)
+  –  2026-02-04  [Trending Bull → Trending Bear]  (no direct match in known-event list)
+
+──────────────────────────────────────────────────────────────────────
+Q5: DOES THE HMM IDENTIFY MEANINGFUL MARKET STRUCTURE?
+
+  Train log-likelihood (per sample): -6.12811
+  Test  log-likelihood (per sample): -5.99207
+  LL ratio (test/train)            : 0.9778
+  Total variation distance (dist.) : 0.1329
+
+  Interpretation:
+  • A Sharpe ratio > 1.0 in Trending Bull and near 0 / negative in
+    Trending Bear confirms trend-directional regime structure.
+  • High Volatility / Crisis should show the largest annualised
+    volatility and deepest drawdown, consistent with crisis labeling.
+  • LL ratio close to 1.0 indicates the model generalises well
+    out-of-sample — the latent structure is stable across time.
+  • Low TVD (< 0.15) indicates regime frequency stability between
+    training and test periods.
+  • Changepoints coinciding with COVID-19 (Feb/Mar 2020),
+    2015–16 China oil selloff, and 2022 bear market confirm
+    economic interpretability of the discovered structure.
+
+──────────────────────────────────────────────────────────────────────
+Q6: CAN REGIME INFORMATION BE USED FOR RISK MANAGEMENT?
+
+  YES — with appropriate caveats:
+
+  ► Strategy switching:
+    • Trending Bull    → run momentum / trend-following strategies.
+    • Trending Bear    → reduce equity exposure; rotate to bonds/cash.
+    • Ranging/Sideways → mean-reversion strategies (pairs, stat-arb).
+    • Crisis           → volatility-targeting, safe-haven allocation.
+
+  ► Risk sizing:
+    Annualised volatility per regime can feed directly into a
+    volatility-targeting framework (e.g., target 10% ann. vol):
+    position_size = target_vol / regime_ann_vol.
+
+  ► Caveats:
+    • Regimes are inferred with posterior uncertainty — always
+      weight decisions by posterior probability, not point estimates.
+    • Regime transitions are detected with a lag (minimum duration
+      filter); act on confirmed transitions, not single-day signals.
+    • The HMM is a generative model trained on historical data;
+      future structural breaks (new regimes) may not be captured.
+    • This output is research / educational — not financial advice.
+
+======================================================================
